@@ -3,3 +3,6 @@ Jade Huang
 Mike Jermann
 
 Hacking Siri!
+
+Prereqs:
+`$ pip install librosa`
