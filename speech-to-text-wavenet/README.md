@@ -1,3 +1,13 @@
+# Notes from Jade
+* Data and pretrained model has been excluded from repo
+* Relevant code to look at:
+  * `test.py` is where the adversarial examples get generated
+  * `attacks_tf.py` is where the code for fast gradient sign method lives
+  * `model.py` is where the network graph is defined
+  * `data.py` handles loading the preprocessed data
+  * `preprocess.py` handles preprocessing VCTK 
+
+
 # Speech-to-Text-WaveNet : End-to-end sentence level English speech recognition using DeepMind's WaveNet
 A tensorflow implementation of speech recognition based on DeepMind's [WaveNet: A Generative Model for Raw Audio](https://arxiv.org/abs/1609.03499). (Hereafter the Paper)
 
