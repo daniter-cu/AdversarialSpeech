@@ -1,0 +1,2900 @@
+Epoch 1/500, train_cost = 126.246, train_wer = 0.828, time = 19.961
+Epoch 2/500, train_cost = 119.078, train_wer = 0.748, time = 19.798
+Epoch 3/500, train_cost = 116.604, train_wer = 0.724, time = 19.899
+Epoch 4/500, train_cost = 114.986, train_wer = 0.717, time = 18.817
+Epoch 5/500, train_cost = 113.222, train_wer = 0.706, time = 19.817
+Epoch 6/500, train_cost = 110.842, train_wer = 0.685, time = 19.857
+Epoch 7/500, train_cost = 108.332, train_wer = 0.670, time = 19.240
+Epoch 8/500, train_cost = 105.389, train_wer = 0.660, time = 19.153
+Epoch 9/500, train_cost = 101.343, train_wer = 0.647, time = 19.820
+Epoch 10/500, train_cost = 96.486, train_wer = 0.636, time = 19.629
+Predicted: 93
+   Actual: 9783
+
+Predicted: 7z73
+   Actual: 6zzz773
+
+Predicted: 464
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 4
+   Actual: 1
+
+Predicted: 74
+   Actual: 279
+
+Predicted: o4o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 4oz
+   Actual: 31z
+
+Predicted: 89
+   Actual: 3o9
+
+Predicted: 7z7
+   Actual: 169z8
+
+Predicted: z32
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 9z
+   Actual: 8z
+
+Predicted: 184z
+   Actual: 658894z
+
+Predicted: 131
+   Actual: 5857
+
+Epoch 11/500, train_cost = 91.581, train_wer = 0.597, time = 19.778
+Epoch 12/500, train_cost = 87.200, train_wer = 0.585, time = 19.649
+Epoch 13/500, train_cost = 82.002, train_wer = 0.564, time = 19.844
+Epoch 14/500, train_cost = 78.877, train_wer = 0.537, time = 19.827
+Epoch 15/500, train_cost = 73.470, train_wer = 0.506, time = 19.786
+Epoch 16/500, train_cost = 69.711, train_wer = 0.493, time = 19.924
+Epoch 17/500, train_cost = 66.441, train_wer = 0.472, time = 19.859
+Epoch 18/500, train_cost = 61.945, train_wer = 0.455, time = 19.909
+Epoch 19/500, train_cost = 61.740, train_wer = 0.446, time = 19.601
+Epoch 20/500, train_cost = 59.694, train_wer = 0.433, time = 19.805
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 4
+   Actual: 1
+
+Predicted: 79
+   Actual: 279
+
+Predicted: 195o59
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 9
+   Actual: 3o9
+
+Predicted: 9z8
+   Actual: 169z8
+
+Predicted: z312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 1z
+   Actual: 8z
+
+Predicted: 1894z
+   Actual: 658894z
+
+Predicted: 13
+   Actual: 5857
+
+Epoch 21/500, train_cost = 56.962, train_wer = 0.414, time = 19.925
+Epoch 22/500, train_cost = 53.998, train_wer = 0.398, time = 19.820
+Epoch 23/500, train_cost = 50.305, train_wer = 0.386, time = 19.676
+Epoch 24/500, train_cost = 49.105, train_wer = 0.372, time = 19.907
+Epoch 25/500, train_cost = 50.147, train_wer = 0.388, time = 19.946
+Epoch 26/500, train_cost = 50.923, train_wer = 0.370, time = 19.886
+Epoch 27/500, train_cost = 48.077, train_wer = 0.378, time = 19.806
+Epoch 28/500, train_cost = 46.673, train_wer = 0.353, time = 19.842
+Epoch 29/500, train_cost = 47.037, train_wer = 0.361, time = 20.019
+Epoch 30/500, train_cost = 50.946, train_wer = 0.374, time = 19.921
+Predicted: 973
+   Actual: 9783
+
+Predicted: 6z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 4
+   Actual: 1
+
+Predicted: 769
+   Actual: 279
+
+Predicted: 195o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 9o9
+   Actual: 3o9
+
+Predicted: 94z8
+   Actual: 169z8
+
+Predicted: 1312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 2z
+   Actual: 8z
+
+Predicted: 6894z
+   Actual: 658894z
+
+Predicted: 157
+   Actual: 5857
+
+Epoch 31/500, train_cost = 50.722, train_wer = 0.366, time = 20.042
+Epoch 32/500, train_cost = 45.791, train_wer = 0.347, time = 20.103
+Epoch 33/500, train_cost = 41.975, train_wer = 0.329, time = 20.149
+Epoch 34/500, train_cost = 38.860, train_wer = 0.302, time = 19.936
+Epoch 35/500, train_cost = 38.009, train_wer = 0.309, time = 19.934
+Epoch 36/500, train_cost = 35.971, train_wer = 0.295, time = 19.910
+Epoch 37/500, train_cost = 34.662, train_wer = 0.281, time = 16.819
+Epoch 38/500, train_cost = 35.510, train_wer = 0.283, time = 15.551
+Epoch 39/500, train_cost = 39.957, train_wer = 0.307, time = 15.558
+Epoch 40/500, train_cost = 39.750, train_wer = 0.296, time = 15.576
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 4
+   Actual: 1
+
+Predicted: 79
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 8o9
+   Actual: 3o9
+
+Predicted: o698
+   Actual: 169z8
+
+Predicted: 1312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: z5894z
+   Actual: 658894z
+
+Predicted: 857
+   Actual: 5857
+
+Epoch 41/500, train_cost = 41.917, train_wer = 0.306, time = 15.492
+Epoch 42/500, train_cost = 41.993, train_wer = 0.326, time = 15.451
+Epoch 43/500, train_cost = 43.883, train_wer = 0.329, time = 15.460
+Epoch 44/500, train_cost = 50.528, train_wer = 0.347, time = 15.411
+Epoch 45/500, train_cost = 50.741, train_wer = 0.362, time = 15.415
+Epoch 46/500, train_cost = 44.058, train_wer = 0.317, time = 15.808
+Epoch 47/500, train_cost = 43.192, train_wer = 0.310, time = 15.442
+Epoch 48/500, train_cost = 44.155, train_wer = 0.313, time = 15.485
+Epoch 49/500, train_cost = 38.361, train_wer = 0.295, time = 15.431
+Epoch 50/500, train_cost = 36.260, train_wer = 0.280, time = 15.591
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 4
+   Actual: 1
+
+Predicted: 79
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 9o9
+   Actual: 3o9
+
+Predicted: 96z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 2z
+   Actual: 8z
+
+Predicted: 15894z
+   Actual: 658894z
+
+Predicted: 957
+   Actual: 5857
+
+Epoch 51/500, train_cost = 34.158, train_wer = 0.268, time = 15.668
+Epoch 52/500, train_cost = 31.370, train_wer = 0.256, time = 15.603
+Epoch 53/500, train_cost = 29.255, train_wer = 0.245, time = 15.401
+Epoch 54/500, train_cost = 27.560, train_wer = 0.239, time = 15.065
+Epoch 55/500, train_cost = 25.176, train_wer = 0.221, time = 15.146
+Epoch 56/500, train_cost = 24.058, train_wer = 0.216, time = 15.706
+Epoch 57/500, train_cost = 23.331, train_wer = 0.211, time = 15.425
+Epoch 58/500, train_cost = 22.497, train_wer = 0.203, time = 15.276
+Epoch 59/500, train_cost = 23.440, train_wer = 0.219, time = 15.491
+Epoch 60/500, train_cost = 23.341, train_wer = 0.209, time = 15.317
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 7
+   Actual: 1
+
+Predicted: 79
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 969z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 76
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: z5894z
+   Actual: 658894z
+
+Predicted: 9857
+   Actual: 5857
+
+Epoch 61/500, train_cost = 22.919, train_wer = 0.210, time = 15.595
+Epoch 62/500, train_cost = 24.227, train_wer = 0.225, time = 15.693
+Epoch 63/500, train_cost = 23.718, train_wer = 0.212, time = 15.374
+Epoch 64/500, train_cost = 29.676, train_wer = 0.242, time = 15.612
+Epoch 65/500, train_cost = 27.838, train_wer = 0.237, time = 15.584
+Epoch 66/500, train_cost = 38.022, train_wer = 0.278, time = 15.598
+Epoch 67/500, train_cost = 43.275, train_wer = 0.300, time = 15.660
+Epoch 68/500, train_cost = 51.088, train_wer = 0.327, time = 15.594
+Epoch 69/500, train_cost = 57.271, train_wer = 0.356, time = 15.915
+Epoch 70/500, train_cost = 55.220, train_wer = 0.326, time = 15.513
+Predicted: 973
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 4
+   Actual: 1
+
+Predicted: 79
+   Actual: 279
+
+Predicted: 154o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 39z
+   Actual: 3o9
+
+Predicted: 62z4
+   Actual: 169z8
+
+Predicted: 1312
+   Actual: 7312
+
+Predicted: 76
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: z5894z
+   Actual: 658894z
+
+Predicted: 157
+   Actual: 5857
+
+Epoch 71/500, train_cost = 53.888, train_wer = 0.343, time = 15.536
+Epoch 72/500, train_cost = 50.250, train_wer = 0.331, time = 15.438
+Epoch 73/500, train_cost = 49.757, train_wer = 0.318, time = 15.783
+Epoch 74/500, train_cost = 44.261, train_wer = 0.301, time = 15.519
+Epoch 75/500, train_cost = 44.776, train_wer = 0.295, time = 15.625
+Epoch 76/500, train_cost = 41.290, train_wer = 0.286, time = 15.626
+Epoch 77/500, train_cost = 35.324, train_wer = 0.265, time = 15.601
+Epoch 78/500, train_cost = 32.665, train_wer = 0.244, time = 15.543
+Epoch 79/500, train_cost = 29.630, train_wer = 0.231, time = 15.529
+Epoch 80/500, train_cost = 27.987, train_wer = 0.213, time = 15.749
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 79
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 317
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 169z8
+   Actual: 169z8
+
+Predicted: 1312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: z5894z
+   Actual: 658894z
+
+Predicted: 857
+   Actual: 5857
+
+Epoch 81/500, train_cost = 28.397, train_wer = 0.227, time = 15.682
+Epoch 82/500, train_cost = 29.276, train_wer = 0.236, time = 15.716
+Epoch 83/500, train_cost = 31.395, train_wer = 0.236, time = 15.852
+Epoch 84/500, train_cost = 34.460, train_wer = 0.249, time = 15.570
+Epoch 85/500, train_cost = 28.890, train_wer = 0.220, time = 15.487
+Epoch 86/500, train_cost = 26.679, train_wer = 0.215, time = 15.607
+Epoch 87/500, train_cost = 22.171, train_wer = 0.196, time = 15.476
+Epoch 88/500, train_cost = 20.638, train_wer = 0.181, time = 15.468
+Epoch 89/500, train_cost = 19.688, train_wer = 0.183, time = 15.677
+Epoch 90/500, train_cost = 20.786, train_wer = 0.189, time = 15.499
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 79
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 169z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: 65894z
+   Actual: 658894z
+
+Predicted: 7157
+   Actual: 5857
+
+Epoch 91/500, train_cost = 19.506, train_wer = 0.178, time = 15.588
+Epoch 92/500, train_cost = 19.452, train_wer = 0.176, time = 15.551
+Epoch 93/500, train_cost = 19.650, train_wer = 0.179, time = 15.545
+Epoch 94/500, train_cost = 19.016, train_wer = 0.179, time = 15.583
+Epoch 95/500, train_cost = 19.920, train_wer = 0.179, time = 15.494
+Epoch 96/500, train_cost = 18.283, train_wer = 0.165, time = 15.642
+Epoch 97/500, train_cost = 16.783, train_wer = 0.157, time = 15.526
+Epoch 98/500, train_cost = 17.937, train_wer = 0.163, time = 15.529
+Epoch 99/500, train_cost = 19.442, train_wer = 0.157, time = 15.407
+Epoch 100/500, train_cost = 22.684, train_wer = 0.182, time = 15.350
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 862
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: z69z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: z589z
+   Actual: 658894z
+
+Predicted: 857
+   Actual: 5857
+
+Epoch 101/500, train_cost = 27.967, train_wer = 0.212, time = 15.424
+Epoch 102/500, train_cost = 30.973, train_wer = 0.232, time = 15.257
+Epoch 103/500, train_cost = 45.642, train_wer = 0.287, time = 15.208
+Epoch 104/500, train_cost = 57.789, train_wer = 0.323, time = 15.375
+Epoch 105/500, train_cost = 68.669, train_wer = 0.366, time = 15.583
+Epoch 106/500, train_cost = 66.295, train_wer = 0.369, time = 15.607
+Epoch 107/500, train_cost = 55.333, train_wer = 0.325, time = 15.447
+Epoch 108/500, train_cost = 45.890, train_wer = 0.290, time = 15.592
+Epoch 109/500, train_cost = 43.727, train_wer = 0.277, time = 15.511
+Epoch 110/500, train_cost = 42.578, train_wer = 0.278, time = 15.205
+Predicted: 979
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 79
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 2
+   Actual: 3
+
+Predicted: 41z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 96z9
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: z5895z
+   Actual: 658894z
+
+Predicted: 812
+   Actual: 5857
+
+Epoch 111/500, train_cost = 43.421, train_wer = 0.264, time = 15.451
+Epoch 112/500, train_cost = 47.333, train_wer = 0.289, time = 15.312
+Epoch 113/500, train_cost = 44.045, train_wer = 0.278, time = 15.360
+Epoch 114/500, train_cost = 38.230, train_wer = 0.250, time = 15.421
+Epoch 115/500, train_cost = 36.426, train_wer = 0.254, time = 15.390
+Epoch 116/500, train_cost = 36.273, train_wer = 0.256, time = 15.590
+Epoch 117/500, train_cost = 32.653, train_wer = 0.236, time = 15.510
+Epoch 118/500, train_cost = 29.550, train_wer = 0.225, time = 15.647
+Epoch 119/500, train_cost = 31.072, train_wer = 0.228, time = 15.576
+Epoch 120/500, train_cost = 29.131, train_wer = 0.214, time = 15.537
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z72
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 272
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 16z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: z5894z
+   Actual: 658894z
+
+Predicted: 757
+   Actual: 5857
+
+Epoch 121/500, train_cost = 25.706, train_wer = 0.196, time = 15.323
+Epoch 122/500, train_cost = 25.819, train_wer = 0.202, time = 15.311
+Epoch 123/500, train_cost = 25.258, train_wer = 0.206, time = 15.510
+Epoch 124/500, train_cost = 26.599, train_wer = 0.198, time = 15.554
+Epoch 125/500, train_cost = 23.004, train_wer = 0.185, time = 15.607
+Epoch 126/500, train_cost = 26.701, train_wer = 0.192, time = 15.603
+Epoch 127/500, train_cost = 28.876, train_wer = 0.216, time = 15.605
+Epoch 128/500, train_cost = 23.095, train_wer = 0.182, time = 15.585
+Epoch 129/500, train_cost = 19.924, train_wer = 0.167, time = 15.641
+Epoch 130/500, train_cost = 20.375, train_wer = 0.158, time = 15.548
+Predicted: 783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: z79
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 39
+   Actual: 3o9
+
+Predicted: 969z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: 15894z
+   Actual: 658894z
+
+Predicted: 1857
+   Actual: 5857
+
+Epoch 131/500, train_cost = 19.278, train_wer = 0.162, time = 15.684
+Epoch 132/500, train_cost = 19.397, train_wer = 0.159, time = 15.428
+Epoch 133/500, train_cost = 19.432, train_wer = 0.169, time = 15.669
+Epoch 134/500, train_cost = 20.014, train_wer = 0.162, time = 15.479
+Epoch 135/500, train_cost = 21.540, train_wer = 0.175, time = 15.682
+Epoch 136/500, train_cost = 22.601, train_wer = 0.178, time = 15.636
+Epoch 137/500, train_cost = 21.485, train_wer = 0.175, time = 15.519
+Epoch 138/500, train_cost = 21.877, train_wer = 0.173, time = 15.528
+Epoch 139/500, train_cost = 29.441, train_wer = 0.214, time = 15.396
+Epoch 140/500, train_cost = 33.753, train_wer = 0.228, time = 15.487
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 272
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 169z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 76
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: 75894
+   Actual: 658894z
+
+Predicted: 9857
+   Actual: 5857
+
+Epoch 141/500, train_cost = 38.147, train_wer = 0.245, time = 15.463
+Epoch 142/500, train_cost = 40.858, train_wer = 0.261, time = 15.389
+Epoch 143/500, train_cost = 40.995, train_wer = 0.264, time = 15.465
+Epoch 144/500, train_cost = 35.932, train_wer = 0.237, time = 15.528
+Epoch 145/500, train_cost = 35.336, train_wer = 0.229, time = 15.408
+Epoch 146/500, train_cost = 31.492, train_wer = 0.207, time = 15.594
+Epoch 147/500, train_cost = 35.985, train_wer = 0.237, time = 15.334
+Epoch 148/500, train_cost = 45.619, train_wer = 0.276, time = 15.651
+Epoch 149/500, train_cost = 33.399, train_wer = 0.229, time = 15.499
+Epoch 150/500, train_cost = 26.632, train_wer = 0.200, time = 15.557
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 579
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 14z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 9z
+   Actual: 8z
+
+Predicted: 15894z
+   Actual: 658894z
+
+Predicted: 857
+   Actual: 5857
+
+Epoch 151/500, train_cost = 27.118, train_wer = 0.191, time = 15.745
+Epoch 152/500, train_cost = 26.851, train_wer = 0.202, time = 15.433
+Epoch 153/500, train_cost = 26.059, train_wer = 0.201, time = 15.655
+Epoch 154/500, train_cost = 25.879, train_wer = 0.195, time = 15.537
+Epoch 155/500, train_cost = 20.456, train_wer = 0.177, time = 15.340
+Epoch 156/500, train_cost = 19.394, train_wer = 0.159, time = 15.504
+Epoch 157/500, train_cost = 18.327, train_wer = 0.159, time = 15.275
+Epoch 158/500, train_cost = 16.605, train_wer = 0.145, time = 15.571
+Epoch 159/500, train_cost = 15.708, train_wer = 0.143, time = 15.588
+Epoch 160/500, train_cost = 15.792, train_wer = 0.145, time = 15.756
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 579
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 169z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: 65894z
+   Actual: 658894z
+
+Predicted: 857
+   Actual: 5857
+
+Epoch 161/500, train_cost = 14.422, train_wer = 0.131, time = 15.429
+Epoch 162/500, train_cost = 14.164, train_wer = 0.132, time = 15.838
+Epoch 163/500, train_cost = 14.017, train_wer = 0.125, time = 15.256
+Epoch 164/500, train_cost = 13.898, train_wer = 0.130, time = 15.610
+Epoch 165/500, train_cost = 13.257, train_wer = 0.124, time = 15.598
+Epoch 166/500, train_cost = 13.737, train_wer = 0.123, time = 15.792
+Epoch 167/500, train_cost = 13.659, train_wer = 0.127, time = 15.529
+Epoch 168/500, train_cost = 12.754, train_wer = 0.118, time = 15.450
+Epoch 169/500, train_cost = 12.323, train_wer = 0.118, time = 15.579
+Epoch 170/500, train_cost = 14.407, train_wer = 0.135, time = 15.058
+Predicted: 9782
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 279
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 169z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: 75894z
+   Actual: 658894z
+
+Predicted: 857
+   Actual: 5857
+
+Epoch 171/500, train_cost = 16.015, train_wer = 0.143, time = 15.118
+Epoch 172/500, train_cost = 19.372, train_wer = 0.159, time = 15.516
+Epoch 173/500, train_cost = 21.786, train_wer = 0.176, time = 15.606
+Epoch 174/500, train_cost = 24.157, train_wer = 0.173, time = 15.600
+Epoch 175/500, train_cost = 49.130, train_wer = 0.276, time = 15.609
+Epoch 176/500, train_cost = 82.482, train_wer = 0.358, time = 15.530
+Epoch 177/500, train_cost = 85.310, train_wer = 0.399, time = 15.551
+Epoch 178/500, train_cost = 85.777, train_wer = 0.388, time = 15.591
+Epoch 179/500, train_cost = 70.684, train_wer = 0.350, time = 15.657
+Epoch 180/500, train_cost = 66.424, train_wer = 0.334, time = 15.519
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z7163
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 59
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 3oz
+   Actual: 31z
+
+Predicted: 8o8
+   Actual: 3o9
+
+Predicted: 949z8
+   Actual: 169z8
+
+Predicted: 732
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 9z
+   Actual: 8z
+
+Predicted: 6894z
+   Actual: 658894z
+
+Predicted: 917
+   Actual: 5857
+
+Epoch 181/500, train_cost = 68.323, train_wer = 0.355, time = 15.508
+Epoch 182/500, train_cost = 63.602, train_wer = 0.323, time = 15.666
+Epoch 183/500, train_cost = 52.066, train_wer = 0.300, time = 15.604
+Epoch 184/500, train_cost = 44.406, train_wer = 0.272, time = 15.407
+Epoch 185/500, train_cost = 41.005, train_wer = 0.255, time = 15.444
+Epoch 186/500, train_cost = 40.242, train_wer = 0.248, time = 15.429
+Epoch 187/500, train_cost = 42.141, train_wer = 0.259, time = 15.488
+Epoch 188/500, train_cost = 44.229, train_wer = 0.263, time = 15.607
+Epoch 189/500, train_cost = 50.009, train_wer = 0.290, time = 15.496
+Epoch 190/500, train_cost = 41.708, train_wer = 0.261, time = 15.622
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 79
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 16z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: 65894z
+   Actual: 658894z
+
+Predicted: 9347
+   Actual: 5857
+
+Epoch 191/500, train_cost = 39.177, train_wer = 0.245, time = 15.782
+Epoch 192/500, train_cost = 36.213, train_wer = 0.227, time = 15.253
+Epoch 193/500, train_cost = 36.083, train_wer = 0.229, time = 15.514
+Epoch 194/500, train_cost = 34.632, train_wer = 0.228, time = 15.427
+Epoch 195/500, train_cost = 36.563, train_wer = 0.240, time = 15.295
+Epoch 196/500, train_cost = 33.982, train_wer = 0.212, time = 15.639
+Epoch 197/500, train_cost = 43.789, train_wer = 0.276, time = 15.539
+Epoch 198/500, train_cost = 35.782, train_wer = 0.237, time = 15.458
+Epoch 199/500, train_cost = 33.669, train_wer = 0.230, time = 15.630
+Epoch 200/500, train_cost = 33.586, train_wer = 0.221, time = 15.401
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: z9
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: z
+   Actual: 31z
+
+Predicted: 1o9
+   Actual: 3o9
+
+Predicted: 269z
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 2z
+   Actual: 8z
+
+Predicted: 15894z
+   Actual: 658894z
+
+Predicted: 9857
+   Actual: 5857
+
+Epoch 201/500, train_cost = 35.504, train_wer = 0.237, time = 15.569
+Epoch 202/500, train_cost = 31.848, train_wer = 0.209, time = 15.462
+Epoch 203/500, train_cost = 30.764, train_wer = 0.209, time = 15.511
+Epoch 204/500, train_cost = 27.329, train_wer = 0.181, time = 15.576
+Epoch 205/500, train_cost = 26.647, train_wer = 0.180, time = 15.564
+Epoch 206/500, train_cost = 27.332, train_wer = 0.191, time = 15.567
+Epoch 207/500, train_cost = 23.917, train_wer = 0.169, time = 15.370
+Epoch 208/500, train_cost = 21.947, train_wer = 0.162, time = 15.443
+Epoch 209/500, train_cost = 21.093, train_wer = 0.157, time = 15.470
+Epoch 210/500, train_cost = 22.878, train_wer = 0.167, time = 15.495
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 879
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 169z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: 65894z
+   Actual: 658894z
+
+Predicted: 857
+   Actual: 5857
+
+Epoch 211/500, train_cost = 21.423, train_wer = 0.161, time = 15.431
+Epoch 212/500, train_cost = 20.910, train_wer = 0.156, time = 15.404
+Epoch 213/500, train_cost = 18.524, train_wer = 0.138, time = 15.587
+Epoch 214/500, train_cost = 17.048, train_wer = 0.134, time = 15.765
+Epoch 215/500, train_cost = 17.223, train_wer = 0.143, time = 15.559
+Epoch 216/500, train_cost = 19.948, train_wer = 0.154, time = 15.499
+Epoch 217/500, train_cost = 20.730, train_wer = 0.153, time = 15.657
+Epoch 218/500, train_cost = 18.742, train_wer = 0.149, time = 15.383
+Epoch 219/500, train_cost = 20.326, train_wer = 0.158, time = 15.514
+Epoch 220/500, train_cost = 21.544, train_wer = 0.165, time = 15.694
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 879
+   Actual: 279
+
+Predicted: o93o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 169z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: z5894z
+   Actual: 658894z
+
+Predicted: 857
+   Actual: 5857
+
+Epoch 221/500, train_cost = 20.915, train_wer = 0.155, time = 15.475
+Epoch 222/500, train_cost = 23.197, train_wer = 0.179, time = 15.645
+Epoch 223/500, train_cost = 20.967, train_wer = 0.168, time = 15.593
+Epoch 224/500, train_cost = 22.826, train_wer = 0.167, time = 15.777
+Epoch 225/500, train_cost = 25.782, train_wer = 0.183, time = 15.550
+Epoch 226/500, train_cost = 23.395, train_wer = 0.168, time = 15.235
+Epoch 227/500, train_cost = 23.456, train_wer = 0.178, time = 15.619
+Epoch 228/500, train_cost = 27.071, train_wer = 0.178, time = 15.544
+Epoch 229/500, train_cost = 26.739, train_wer = 0.189, time = 15.539
+Epoch 230/500, train_cost = 26.375, train_wer = 0.182, time = 15.712
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: z79
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 149z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 9z
+   Actual: 8z
+
+Predicted: 652894z
+   Actual: 658894z
+
+Predicted: 857
+   Actual: 5857
+
+Epoch 231/500, train_cost = 28.505, train_wer = 0.191, time = 15.582
+Epoch 232/500, train_cost = 44.839, train_wer = 0.251, time = 15.645
+Epoch 233/500, train_cost = 51.898, train_wer = 0.297, time = 15.532
+Epoch 234/500, train_cost = 49.178, train_wer = 0.288, time = 15.427
+Epoch 235/500, train_cost = 48.167, train_wer = 0.277, time = 15.470
+Epoch 236/500, train_cost = 50.506, train_wer = 0.284, time = 15.555
+Epoch 237/500, train_cost = 47.058, train_wer = 0.277, time = 15.578
+Epoch 238/500, train_cost = 39.290, train_wer = 0.247, time = 15.497
+Epoch 239/500, train_cost = 34.594, train_wer = 0.232, time = 15.587
+Epoch 240/500, train_cost = 32.513, train_wer = 0.219, time = 15.253
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z373
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: z79
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 39
+   Actual: 3o9
+
+Predicted: 16938
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: 62894z
+   Actual: 658894z
+
+Predicted: 847
+   Actual: 5857
+
+Epoch 241/500, train_cost = 26.831, train_wer = 0.192, time = 15.424
+Epoch 242/500, train_cost = 31.649, train_wer = 0.209, time = 15.410
+Epoch 243/500, train_cost = 33.527, train_wer = 0.229, time = 15.358
+Epoch 244/500, train_cost = 35.127, train_wer = 0.226, time = 15.425
+Epoch 245/500, train_cost = 42.581, train_wer = 0.256, time = 15.374
+Epoch 246/500, train_cost = 35.677, train_wer = 0.235, time = 15.321
+Epoch 247/500, train_cost = 28.775, train_wer = 0.210, time = 15.349
+Epoch 248/500, train_cost = 28.499, train_wer = 0.205, time = 15.242
+Epoch 249/500, train_cost = 24.682, train_wer = 0.179, time = 15.361
+Epoch 250/500, train_cost = 23.163, train_wer = 0.179, time = 15.519
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z7z
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: z79
+   Actual: 279
+
+Predicted: o95o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 169z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: 15894z
+   Actual: 658894z
+
+Predicted: 9857
+   Actual: 5857
+
+Epoch 251/500, train_cost = 21.969, train_wer = 0.171, time = 15.380
+Epoch 252/500, train_cost = 23.927, train_wer = 0.179, time = 15.264
+Epoch 253/500, train_cost = 21.315, train_wer = 0.166, time = 15.237
+Epoch 254/500, train_cost = 22.322, train_wer = 0.170, time = 15.374
+Epoch 255/500, train_cost = 41.056, train_wer = 0.251, time = 15.284
+Epoch 256/500, train_cost = 30.794, train_wer = 0.210, time = 15.489
+Epoch 257/500, train_cost = 31.531, train_wer = 0.212, time = 15.242
+Epoch 258/500, train_cost = 25.653, train_wer = 0.185, time = 15.472
+Epoch 259/500, train_cost = 30.201, train_wer = 0.206, time = 15.362
+Epoch 260/500, train_cost = 29.151, train_wer = 0.204, time = 15.549
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: z79
+   Actual: 279
+
+Predicted: 175o5
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: zo9
+   Actual: 3o9
+
+Predicted: 1697
+   Actual: 169z8
+
+Predicted: 7372
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: 758594z
+   Actual: 658894z
+
+Predicted: 847
+   Actual: 5857
+
+Epoch 261/500, train_cost = 39.769, train_wer = 0.241, time = 15.260
+Epoch 262/500, train_cost = 37.108, train_wer = 0.242, time = 15.394
+Epoch 263/500, train_cost = 33.913, train_wer = 0.230, time = 15.349
+Epoch 264/500, train_cost = 29.560, train_wer = 0.211, time = 15.374
+Epoch 265/500, train_cost = 27.713, train_wer = 0.199, time = 15.396
+Epoch 266/500, train_cost = 26.589, train_wer = 0.189, time = 15.531
+Epoch 267/500, train_cost = 21.827, train_wer = 0.169, time = 15.598
+Epoch 268/500, train_cost = 17.153, train_wer = 0.149, time = 15.500
+Epoch 269/500, train_cost = 19.696, train_wer = 0.163, time = 15.372
+Epoch 270/500, train_cost = 20.996, train_wer = 0.170, time = 15.501
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: z79
+   Actual: 279
+
+Predicted: o95o5
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o
+   Actual: 3o9
+
+Predicted: 16968
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 2z
+   Actual: 8z
+
+Predicted: 75894z
+   Actual: 658894z
+
+Predicted: 7857
+   Actual: 5857
+
+Epoch 271/500, train_cost = 22.915, train_wer = 0.170, time = 15.374
+Epoch 272/500, train_cost = 22.787, train_wer = 0.169, time = 15.279
+Epoch 273/500, train_cost = 20.737, train_wer = 0.154, time = 15.309
+Epoch 274/500, train_cost = 22.962, train_wer = 0.174, time = 15.275
+Epoch 275/500, train_cost = 29.679, train_wer = 0.203, time = 15.310
+Epoch 276/500, train_cost = 32.004, train_wer = 0.221, time = 15.316
+Epoch 277/500, train_cost = 26.214, train_wer = 0.197, time = 15.298
+Epoch 278/500, train_cost = 32.444, train_wer = 0.215, time = 15.296
+Epoch 279/500, train_cost = 28.697, train_wer = 0.199, time = 15.302
+Epoch 280/500, train_cost = 28.200, train_wer = 0.183, time = 15.323
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z7
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: z79
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 162z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 5z
+   Actual: 8z
+
+Predicted: 15894z
+   Actual: 658894z
+
+Predicted: 857
+   Actual: 5857
+
+Epoch 281/500, train_cost = 43.690, train_wer = 0.254, time = 15.392
+Epoch 282/500, train_cost = 47.190, train_wer = 0.276, time = 15.361
+Epoch 283/500, train_cost = 33.940, train_wer = 0.220, time = 15.285
+Epoch 284/500, train_cost = 32.493, train_wer = 0.210, time = 15.382
+Epoch 285/500, train_cost = 29.277, train_wer = 0.192, time = 15.072
+Epoch 286/500, train_cost = 36.890, train_wer = 0.220, time = 15.160
+Epoch 287/500, train_cost = 52.088, train_wer = 0.282, time = 14.782
+Epoch 288/500, train_cost = 58.665, train_wer = 0.301, time = 15.411
+Epoch 289/500, train_cost = 47.482, train_wer = 0.278, time = 15.332
+Epoch 290/500, train_cost = 45.334, train_wer = 0.268, time = 15.208
+Predicted: 983
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 5
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 279
+   Actual: 279
+
+Predicted: o454o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: o9
+   Actual: 3o9
+
+Predicted: 162z8
+   Actual: 169z8
+
+Predicted: 1312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: 13843z
+   Actual: 658894z
+
+Predicted: 9154
+   Actual: 5857
+
+Epoch 291/500, train_cost = 48.838, train_wer = 0.278, time = 15.391
+Epoch 292/500, train_cost = 37.084, train_wer = 0.236, time = 15.412
+Epoch 293/500, train_cost = 36.195, train_wer = 0.228, time = 15.364
+Epoch 294/500, train_cost = 31.905, train_wer = 0.207, time = 15.285
+Epoch 295/500, train_cost = 33.283, train_wer = 0.208, time = 15.580
+Epoch 296/500, train_cost = 31.138, train_wer = 0.206, time = 15.139
+Epoch 297/500, train_cost = 29.075, train_wer = 0.202, time = 15.301
+Epoch 298/500, train_cost = 26.598, train_wer = 0.190, time = 15.470
+Epoch 299/500, train_cost = 28.936, train_wer = 0.195, time = 15.325
+Epoch 300/500, train_cost = 25.510, train_wer = 0.182, time = 15.291
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 36o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 279
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 39
+   Actual: 3o9
+
+Predicted: 162z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 5z
+   Actual: 8z
+
+Predicted: 15894
+   Actual: 658894z
+
+Predicted: 9857
+   Actual: 5857
+
+Epoch 301/500, train_cost = 24.367, train_wer = 0.179, time = 15.334
+Epoch 302/500, train_cost = 24.070, train_wer = 0.179, time = 15.481
+Epoch 303/500, train_cost = 26.740, train_wer = 0.197, time = 15.489
+Epoch 304/500, train_cost = 25.698, train_wer = 0.178, time = 15.374
+Epoch 305/500, train_cost = 28.297, train_wer = 0.195, time = 15.222
+Epoch 306/500, train_cost = 32.590, train_wer = 0.206, time = 15.255
+Epoch 307/500, train_cost = 32.252, train_wer = 0.210, time = 15.348
+Epoch 308/500, train_cost = 44.170, train_wer = 0.250, time = 15.420
+Epoch 309/500, train_cost = 49.517, train_wer = 0.274, time = 15.261
+Epoch 310/500, train_cost = 41.358, train_wer = 0.234, time = 15.319
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 279
+   Actual: 279
+
+Predicted: o15o57
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 8o9
+   Actual: 3o9
+
+Predicted: 16z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: 1284z
+   Actual: 658894z
+
+Predicted: 187
+   Actual: 5857
+
+Epoch 311/500, train_cost = 34.434, train_wer = 0.216, time = 15.196
+Epoch 312/500, train_cost = 34.398, train_wer = 0.213, time = 15.352
+Epoch 313/500, train_cost = 26.569, train_wer = 0.187, time = 15.493
+Epoch 314/500, train_cost = 24.870, train_wer = 0.175, time = 15.344
+Epoch 315/500, train_cost = 23.147, train_wer = 0.168, time = 15.349
+Epoch 316/500, train_cost = 21.712, train_wer = 0.159, time = 15.376
+Epoch 317/500, train_cost = 19.265, train_wer = 0.145, time = 15.437
+Epoch 318/500, train_cost = 19.986, train_wer = 0.153, time = 15.396
+Epoch 319/500, train_cost = 21.683, train_wer = 0.170, time = 15.287
+Epoch 320/500, train_cost = 19.786, train_wer = 0.156, time = 15.249
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 279
+   Actual: 279
+
+Predicted: o95o52
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 16z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 9z
+   Actual: 8z
+
+Predicted: 65894z
+   Actual: 658894z
+
+Predicted: 9457
+   Actual: 5857
+
+Epoch 321/500, train_cost = 17.675, train_wer = 0.143, time = 15.450
+Epoch 322/500, train_cost = 15.706, train_wer = 0.134, time = 15.426
+Epoch 323/500, train_cost = 15.327, train_wer = 0.126, time = 15.293
+Epoch 324/500, train_cost = 17.224, train_wer = 0.133, time = 15.413
+Epoch 325/500, train_cost = 16.409, train_wer = 0.134, time = 15.263
+Epoch 326/500, train_cost = 14.710, train_wer = 0.114, time = 15.223
+Epoch 327/500, train_cost = 13.855, train_wer = 0.120, time = 15.479
+Epoch 328/500, train_cost = 15.623, train_wer = 0.124, time = 15.415
+Epoch 329/500, train_cost = 14.501, train_wer = 0.116, time = 15.287
+Epoch 330/500, train_cost = 14.478, train_wer = 0.111, time = 15.357
+Predicted: 783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 279
+   Actual: 279
+
+Predicted: o95o5
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 169z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 2z
+   Actual: 8z
+
+Predicted: 658z4z
+   Actual: 658894z
+
+Predicted: 857
+   Actual: 5857
+
+Epoch 331/500, train_cost = 19.549, train_wer = 0.145, time = 15.411
+Epoch 332/500, train_cost = 24.569, train_wer = 0.173, time = 15.358
+Epoch 333/500, train_cost = 25.128, train_wer = 0.171, time = 15.286
+Epoch 334/500, train_cost = 29.142, train_wer = 0.197, time = 15.276
+Epoch 335/500, train_cost = 44.547, train_wer = 0.254, time = 15.377
+Epoch 336/500, train_cost = 49.181, train_wer = 0.269, time = 15.457
+Epoch 337/500, train_cost = 48.647, train_wer = 0.279, time = 15.276
+Epoch 338/500, train_cost = 49.574, train_wer = 0.276, time = 15.155
+Epoch 339/500, train_cost = 55.128, train_wer = 0.295, time = 15.442
+Epoch 340/500, train_cost = 51.867, train_wer = 0.267, time = 15.450
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z71
+   Actual: 6zzz773
+
+Predicted: 9o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 79
+   Actual: 279
+
+Predicted: o954o4o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o
+   Actual: 3o9
+
+Predicted: 9627
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: 69864
+   Actual: 658894z
+
+Predicted: 987
+   Actual: 5857
+
+Epoch 341/500, train_cost = 47.096, train_wer = 0.265, time = 15.335
+Epoch 342/500, train_cost = 51.056, train_wer = 0.276, time = 15.311
+Epoch 343/500, train_cost = 60.634, train_wer = 0.305, time = 15.194
+Epoch 344/500, train_cost = 55.927, train_wer = 0.297, time = 15.312
+Epoch 345/500, train_cost = 51.383, train_wer = 0.284, time = 15.341
+Epoch 346/500, train_cost = 44.910, train_wer = 0.275, time = 15.443
+Epoch 347/500, train_cost = 39.864, train_wer = 0.254, time = 15.330
+Epoch 348/500, train_cost = 42.916, train_wer = 0.260, time = 15.295
+Epoch 349/500, train_cost = 41.995, train_wer = 0.236, time = 15.192
+Epoch 350/500, train_cost = 32.901, train_wer = 0.205, time = 15.373
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 79
+   Actual: 279
+
+Predicted: o95o5
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 169z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 2z
+   Actual: 8z
+
+Predicted: 685895
+   Actual: 658894z
+
+Predicted: 9872
+   Actual: 5857
+
+Epoch 351/500, train_cost = 31.850, train_wer = 0.210, time = 15.124
+Epoch 352/500, train_cost = 29.328, train_wer = 0.198, time = 15.420
+Epoch 353/500, train_cost = 24.186, train_wer = 0.172, time = 15.230
+Epoch 354/500, train_cost = 23.044, train_wer = 0.162, time = 15.295
+Epoch 355/500, train_cost = 23.398, train_wer = 0.177, time = 15.303
+Epoch 356/500, train_cost = 23.273, train_wer = 0.171, time = 15.553
+Epoch 357/500, train_cost = 21.057, train_wer = 0.154, time = 15.242
+Epoch 358/500, train_cost = 20.018, train_wer = 0.151, time = 15.301
+Epoch 359/500, train_cost = 17.781, train_wer = 0.137, time = 15.374
+Epoch 360/500, train_cost = 19.232, train_wer = 0.148, time = 15.380
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 279
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 169z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: 65894z
+   Actual: 658894z
+
+Predicted: 857
+   Actual: 5857
+
+Epoch 361/500, train_cost = 16.707, train_wer = 0.146, time = 15.441
+Epoch 362/500, train_cost = 17.372, train_wer = 0.140, time = 15.363
+Epoch 363/500, train_cost = 18.079, train_wer = 0.155, time = 15.255
+Epoch 364/500, train_cost = 19.458, train_wer = 0.146, time = 15.255
+Epoch 365/500, train_cost = 22.114, train_wer = 0.161, time = 15.395
+Epoch 366/500, train_cost = 18.404, train_wer = 0.147, time = 15.294
+Epoch 367/500, train_cost = 20.108, train_wer = 0.148, time = 15.313
+Epoch 368/500, train_cost = 20.637, train_wer = 0.146, time = 15.272
+Epoch 369/500, train_cost = 31.927, train_wer = 0.194, time = 15.258
+Epoch 370/500, train_cost = 39.483, train_wer = 0.227, time = 15.383
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z473
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 262
+   Actual: 279
+
+Predicted: o952o4o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 1695
+   Actual: 169z8
+
+Predicted: 9312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: 6589z
+   Actual: 658894z
+
+Predicted: 9132
+   Actual: 5857
+
+Epoch 371/500, train_cost = 45.068, train_wer = 0.249, time = 15.521
+Epoch 372/500, train_cost = 35.215, train_wer = 0.216, time = 15.301
+Epoch 373/500, train_cost = 35.435, train_wer = 0.236, time = 15.305
+Epoch 374/500, train_cost = 34.139, train_wer = 0.220, time = 15.276
+Epoch 375/500, train_cost = 33.066, train_wer = 0.213, time = 15.308
+Epoch 376/500, train_cost = 34.953, train_wer = 0.221, time = 15.210
+Epoch 377/500, train_cost = 29.325, train_wer = 0.205, time = 15.348
+Epoch 378/500, train_cost = 27.966, train_wer = 0.191, time = 15.359
+Epoch 379/500, train_cost = 25.702, train_wer = 0.177, time = 15.230
+Epoch 380/500, train_cost = 23.704, train_wer = 0.157, time = 15.357
+Predicted: 9713
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 279
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 169z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: 15894
+   Actual: 658894z
+
+Predicted: 857
+   Actual: 5857
+
+Epoch 381/500, train_cost = 23.891, train_wer = 0.163, time = 15.347
+Epoch 382/500, train_cost = 25.241, train_wer = 0.145, time = 15.509
+Epoch 383/500, train_cost = 27.005, train_wer = 0.183, time = 15.192
+Epoch 384/500, train_cost = 24.488, train_wer = 0.162, time = 15.347
+Epoch 385/500, train_cost = 22.926, train_wer = 0.155, time = 15.308
+Epoch 386/500, train_cost = 20.728, train_wer = 0.152, time = 15.330
+Epoch 387/500, train_cost = 25.426, train_wer = 0.167, time = 15.303
+Epoch 388/500, train_cost = 28.538, train_wer = 0.193, time = 15.185
+Epoch 389/500, train_cost = 27.388, train_wer = 0.179, time = 15.155
+Epoch 390/500, train_cost = 21.608, train_wer = 0.161, time = 15.125
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z75
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 279
+   Actual: 279
+
+Predicted: o95o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 169z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 76
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: z5894z
+   Actual: 658894z
+
+Predicted: 857
+   Actual: 5857
+
+Epoch 391/500, train_cost = 21.331, train_wer = 0.159, time = 15.416
+Epoch 392/500, train_cost = 21.965, train_wer = 0.164, time = 15.367
+Epoch 393/500, train_cost = 23.439, train_wer = 0.158, time = 15.114
+Epoch 394/500, train_cost = 30.942, train_wer = 0.207, time = 15.224
+Epoch 395/500, train_cost = 36.528, train_wer = 0.224, time = 15.441
+Epoch 396/500, train_cost = 34.793, train_wer = 0.217, time = 15.368
+Epoch 397/500, train_cost = 30.544, train_wer = 0.198, time = 15.286
+Epoch 398/500, train_cost = 32.457, train_wer = 0.216, time = 15.310
+Epoch 399/500, train_cost = 28.908, train_wer = 0.191, time = 15.315
+Epoch 400/500, train_cost = 30.624, train_wer = 0.198, time = 15.445
+Predicted: 9783
+   Actual: 9783
+
+Predicted: 6z73
+   Actual: 6zzz773
+
+Predicted: 96o
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 279
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 161z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: z5897
+   Actual: 658894z
+
+Predicted: 2157
+   Actual: 5857
+
+Epoch 401/500, train_cost = 27.144, train_wer = 0.173, time = 15.380
+Epoch 402/500, train_cost = 22.948, train_wer = 0.162, time = 15.217
+Epoch 403/500, train_cost = 21.944, train_wer = 0.142, time = 14.827
+Epoch 404/500, train_cost = 24.090, train_wer = 0.169, time = 14.869
+Epoch 405/500, train_cost = 24.325, train_wer = 0.159, time = 15.109
+Epoch 406/500, train_cost = 23.478, train_wer = 0.161, time = 15.197
+Epoch 407/500, train_cost = 25.329, train_wer = 0.168, time = 15.439
+Epoch 408/500, train_cost = 27.664, train_wer = 0.186, time = 15.348
+Epoch 409/500, train_cost = 28.283, train_wer = 0.192, time = 15.225
+Epoch 410/500, train_cost = 30.763, train_wer = 0.195, time = 15.240
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 979
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 389
+   Actual: 3o9
+
+Predicted: 269z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 53
+   Actual: 8z
+
+Predicted: z858z
+   Actual: 658894z
+
+Predicted: 857
+   Actual: 5857
+
+Epoch 411/500, train_cost = 30.606, train_wer = 0.184, time = 15.342
+Epoch 412/500, train_cost = 30.163, train_wer = 0.200, time = 15.293
+Epoch 413/500, train_cost = 30.330, train_wer = 0.188, time = 15.289
+Epoch 414/500, train_cost = 27.215, train_wer = 0.179, time = 15.350
+Epoch 415/500, train_cost = 23.899, train_wer = 0.165, time = 15.458
+Epoch 416/500, train_cost = 22.976, train_wer = 0.162, time = 15.462
+Epoch 417/500, train_cost = 25.408, train_wer = 0.153, time = 15.161
+Epoch 418/500, train_cost = 28.846, train_wer = 0.173, time = 15.242
+Epoch 419/500, train_cost = 35.488, train_wer = 0.206, time = 15.327
+Epoch 420/500, train_cost = 35.918, train_wer = 0.219, time = 15.323
+Predicted: 7z9
+   Actual: 9783
+
+Predicted: z75
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: z7z
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 89o
+   Actual: 3o9
+
+Predicted: 1698
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: z18z84z
+   Actual: 658894z
+
+Predicted: 857
+   Actual: 5857
+
+Epoch 421/500, train_cost = 36.825, train_wer = 0.233, time = 15.292
+Epoch 422/500, train_cost = 43.242, train_wer = 0.233, time = 15.222
+Epoch 423/500, train_cost = 42.164, train_wer = 0.232, time = 15.341
+Epoch 424/500, train_cost = 43.336, train_wer = 0.234, time = 15.332
+Epoch 425/500, train_cost = 43.849, train_wer = 0.233, time = 15.503
+Epoch 426/500, train_cost = 42.144, train_wer = 0.235, time = 15.408
+Epoch 427/500, train_cost = 70.503, train_wer = 0.316, time = 15.240
+Epoch 428/500, train_cost = 94.933, train_wer = 0.401, time = 15.286
+Epoch 429/500, train_cost = 86.622, train_wer = 0.387, time = 15.302
+Epoch 430/500, train_cost = 87.393, train_wer = 0.397, time = 15.274
+Predicted: 3783
+   Actual: 9783
+
+Predicted: z5451
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 272
+   Actual: 279
+
+Predicted: o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 1z
+   Actual: 31z
+
+Predicted: 3o1
+   Actual: 3o9
+
+Predicted: 96162
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 9z
+   Actual: 8z
+
+Predicted: 685z4
+   Actual: 658894z
+
+Predicted: 9z7
+   Actual: 5857
+
+Epoch 431/500, train_cost = 66.531, train_wer = 0.355, time = 15.272
+Epoch 432/500, train_cost = 55.515, train_wer = 0.294, time = 15.196
+Epoch 433/500, train_cost = 53.326, train_wer = 0.296, time = 15.360
+Epoch 434/500, train_cost = 52.804, train_wer = 0.301, time = 15.448
+Epoch 435/500, train_cost = 49.110, train_wer = 0.293, time = 15.391
+Epoch 436/500, train_cost = 48.637, train_wer = 0.278, time = 15.367
+Epoch 437/500, train_cost = 51.478, train_wer = 0.308, time = 15.305
+Epoch 438/500, train_cost = 50.923, train_wer = 0.280, time = 15.380
+Epoch 439/500, train_cost = 48.949, train_wer = 0.282, time = 15.194
+Epoch 440/500, train_cost = 47.922, train_wer = 0.281, time = 15.343
+Predicted: 978
+   Actual: 9783
+
+Predicted: z3
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 972
+   Actual: 279
+
+Predicted: o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 1o9
+   Actual: 3o9
+
+Predicted: 16278
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: z
+   Actual: 8z
+
+Predicted: 798z9z
+   Actual: 658894z
+
+Predicted: 9836
+   Actual: 5857
+
+Epoch 441/500, train_cost = 54.170, train_wer = 0.318, time = 15.444
+Epoch 442/500, train_cost = 52.712, train_wer = 0.298, time = 15.270
+Epoch 443/500, train_cost = 50.070, train_wer = 0.279, time = 15.266
+Epoch 444/500, train_cost = 44.734, train_wer = 0.275, time = 15.241
+Epoch 445/500, train_cost = 44.546, train_wer = 0.266, time = 15.137
+Epoch 446/500, train_cost = 45.034, train_wer = 0.273, time = 15.258
+Epoch 447/500, train_cost = 53.255, train_wer = 0.291, time = 15.297
+Epoch 448/500, train_cost = 47.157, train_wer = 0.280, time = 15.210
+Epoch 449/500, train_cost = 37.446, train_wer = 0.240, time = 15.285
+Epoch 450/500, train_cost = 38.301, train_wer = 0.234, time = 15.362
+Predicted: 9783
+   Actual: 9783
+
+Predicted: 6z473
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 979
+   Actual: 279
+
+Predicted: o5857
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 1o9
+   Actual: 3o9
+
+Predicted: 461o
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: z589z
+   Actual: 658894z
+
+Predicted: 2157
+   Actual: 5857
+
+Epoch 451/500, train_cost = 38.256, train_wer = 0.242, time = 15.323
+Epoch 452/500, train_cost = 38.891, train_wer = 0.228, time = 15.395
+Epoch 453/500, train_cost = 33.498, train_wer = 0.217, time = 15.349
+Epoch 454/500, train_cost = 31.347, train_wer = 0.200, time = 15.238
+Epoch 455/500, train_cost = 28.812, train_wer = 0.191, time = 15.318
+Epoch 456/500, train_cost = 27.218, train_wer = 0.183, time = 15.391
+Epoch 457/500, train_cost = 23.660, train_wer = 0.169, time = 15.293
+Epoch 458/500, train_cost = 23.273, train_wer = 0.167, time = 15.314
+Epoch 459/500, train_cost = 22.841, train_wer = 0.156, time = 15.358
+Epoch 460/500, train_cost = 23.899, train_wer = 0.167, time = 15.488
+Predicted: 783
+   Actual: 9783
+
+Predicted: 6z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 279
+   Actual: 279
+
+Predicted: o95o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 969z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: z
+   Actual: 8z
+
+Predicted: z5894z
+   Actual: 658894z
+
+Predicted: 2157
+   Actual: 5857
+
+Epoch 461/500, train_cost = 24.202, train_wer = 0.164, time = 15.291
+Epoch 462/500, train_cost = 25.542, train_wer = 0.179, time = 15.236
+Epoch 463/500, train_cost = 31.498, train_wer = 0.210, time = 15.416
+Epoch 464/500, train_cost = 28.033, train_wer = 0.190, time = 15.490
+Epoch 465/500, train_cost = 28.522, train_wer = 0.180, time = 15.284
+Epoch 466/500, train_cost = 25.963, train_wer = 0.173, time = 15.062
+Epoch 467/500, train_cost = 25.659, train_wer = 0.168, time = 15.210
+Epoch 468/500, train_cost = 23.795, train_wer = 0.164, time = 15.368
+Epoch 469/500, train_cost = 25.026, train_wer = 0.170, time = 15.170
+Epoch 470/500, train_cost = 26.532, train_wer = 0.188, time = 15.404
+Predicted: 9783
+   Actual: 9783
+
+Predicted: 6z273
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 279
+   Actual: 279
+
+Predicted: o95o7o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 9698
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: z
+   Actual: 8z
+
+Predicted: z5894z
+   Actual: 658894z
+
+Predicted: 857
+   Actual: 5857
+
+Epoch 471/500, train_cost = 22.746, train_wer = 0.164, time = 15.344
+Epoch 472/500, train_cost = 20.279, train_wer = 0.149, time = 15.310
+Epoch 473/500, train_cost = 18.332, train_wer = 0.145, time = 15.249
+Epoch 474/500, train_cost = 16.556, train_wer = 0.133, time = 15.344
+Epoch 475/500, train_cost = 15.313, train_wer = 0.124, time = 15.295
+Epoch 476/500, train_cost = 15.702, train_wer = 0.120, time = 15.195
+Epoch 477/500, train_cost = 15.634, train_wer = 0.124, time = 15.339
+Epoch 478/500, train_cost = 15.573, train_wer = 0.121, time = 15.430
+Epoch 479/500, train_cost = 15.911, train_wer = 0.124, time = 15.272
+Epoch 480/500, train_cost = 15.235, train_wer = 0.120, time = 15.294
+Predicted: 9783
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 279
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3o9
+   Actual: 3o9
+
+Predicted: 169z8
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: 65894z
+   Actual: 658894z
+
+Predicted: 857
+   Actual: 5857
+
+Epoch 481/500, train_cost = 17.825, train_wer = 0.143, time = 15.309
+Epoch 482/500, train_cost = 15.884, train_wer = 0.128, time = 15.333
+Epoch 483/500, train_cost = 17.870, train_wer = 0.142, time = 15.514
+Epoch 484/500, train_cost = 16.801, train_wer = 0.124, time = 15.241
+Epoch 485/500, train_cost = 14.307, train_wer = 0.118, time = 15.356
+Epoch 486/500, train_cost = 16.228, train_wer = 0.129, time = 15.292
+Epoch 487/500, train_cost = 23.451, train_wer = 0.158, time = 15.282
+Epoch 488/500, train_cost = 27.705, train_wer = 0.184, time = 15.317
+Epoch 489/500, train_cost = 42.240, train_wer = 0.252, time = 15.343
+Epoch 490/500, train_cost = 54.878, train_wer = 0.256, time = 15.307
+Predicted: 9787
+   Actual: 9783
+
+Predicted: z473
+   Actual: 6zzz773
+
+Predicted: 9694
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 279
+   Actual: 279
+
+Predicted: o4o5o5
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 3z1
+   Actual: 3o9
+
+Predicted: 1617
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: 695z928
+   Actual: 658894z
+
+Predicted: 3137
+   Actual: 5857
+
+Epoch 491/500, train_cost = 83.166, train_wer = 0.357, time = 15.382
+Epoch 492/500, train_cost = 98.928, train_wer = 0.399, time = 15.356
+Epoch 493/500, train_cost = 94.863, train_wer = 0.400, time = 15.357
+Epoch 494/500, train_cost = 92.416, train_wer = 0.400, time = 15.278
+Epoch 495/500, train_cost = 100.977, train_wer = 0.442, time = 15.250
+Epoch 496/500, train_cost = 97.693, train_wer = 0.435, time = 15.321
+Epoch 497/500, train_cost = 93.394, train_wer = 0.425, time = 15.347
+Epoch 498/500, train_cost = 85.512, train_wer = 0.420, time = 15.344
+Epoch 499/500, train_cost = 77.916, train_wer = 0.404, time = 15.254
+Epoch 500/500, train_cost = 70.549, train_wer = 0.372, time = 15.370
+Predicted: 781
+   Actual: 9783
+
+Predicted: z73
+   Actual: 6zzz773
+
+Predicted: 96o4
+   Actual: 96o4
+
+Predicted: 6
+   Actual: 6
+
+Predicted: 1
+   Actual: 1
+
+Predicted: 979
+   Actual: 279
+
+Predicted: o95o5o
+   Actual: o955o5o
+
+Predicted: 3
+   Actual: 3
+
+Predicted: 31z
+   Actual: 31z
+
+Predicted: 38
+   Actual: 3o9
+
+Predicted: 3297
+   Actual: 169z8
+
+Predicted: 7312
+   Actual: 7312
+
+Predicted: 6
+   Actual: z6
+
+Predicted: 8z
+   Actual: 8z
+
+Predicted: z5z4z
+   Actual: 658894z
+
+Predicted: 9137
+   Actual: 5857
+
