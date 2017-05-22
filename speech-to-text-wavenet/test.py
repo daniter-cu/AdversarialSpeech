@@ -1,5 +1,5 @@
 import sugartensor as tf
-from data import SpeechCorpus, voca_size
+from data import SpeechCorpus, voca_size, index2str
 from model import *
 import numpy as np
 from tqdm import tqdm
@@ -29,6 +29,7 @@ batch_size = 16
 #
 
 # corpus input tensor ( with QueueRunner )
+print 'building corpus'
 data = SpeechCorpus(batch_size=batch_size, set_name=tf.sg_arg().set)
 
 # mfcc feature of audio
@@ -55,16 +56,19 @@ seq_len = tf.not_equal(x.sg_sum(axis=2), 0.).sg_int().sg_sum(axis=1)
 
 with tf.Session(config=tf.ConfigProto(allow_soft_placement=True)) as sess:
 
+    # generate adversarial examples
     fgsm = FastGradientMethod(get_logit, sess=sess)
     fgsm_params = {'eps': 0.3}
     adv_x = fgsm.generate(x, **fgsm_params)
     diff_x = adv_x - x
+
+    # run adversarial examples through network
     logit_adv = get_logit_again(adv_x)
     preds_adv = get_decoded_seq(logit_adv, seq_len, y)
 
+    # output on normal inputs
     logit_x = get_logit_again(x)
     preds_x = get_decoded_seq(logit_x, seq_len, y)
-    #preds_adv = model(adv_x)
 
     # init variables
     tf.sg_init(sess)
@@ -79,6 +83,7 @@ with tf.Session(config=tf.ConfigProto(allow_soft_placement=True)) as sess:
 
 
     f = open("preds_vs_labels.tsv", "wb")
+    f.write("same_diff\tpred_on_orig\tpred_on_adv\ttarget\tnum_pred_on_orig\tnum_pred_on_adv\tnum_target\n")
     with tf.sg_queue_context():
 
         # create progress bar
@@ -97,14 +102,19 @@ with tf.Session(config=tf.ConfigProto(allow_soft_placement=True)) as sess:
             preds = tf.sparse_tensor_to_dense(preds, default_value=-1).eval()
             predsx = tf.sparse_tensor_to_dense(predsx, default_value=-1).eval()
 
-            #for p, t in zip(preds, target):
-            for p, t in zip(preds, predsx):
-                p = [ch for ch in p if ch != -1]
-                #t = [ch for ch in t if ch != 0]
-                t = [ch for ch in t if ch != -1] 
-                if p != t: correct = "DIFF"
+            for p, px, t in zip(preds, predsx, target):
+                p = [(int(ch) + 1) for ch in p if ch != -1]
+                str_p = index2str(p)
+                
+                t = [ch for ch in t if ch != 0]
+                str_t = index2str(t)
+
+                px = [(int(ch) + 1) for ch in px if ch != -1] 
+                str_px = index2str(px)
+                
+                if px != p: correct = "DIFF"
                 else: correct = "SAME"
-                f.write("%s\t%s\t%s\n" % (correct, ' '.join(map(str,p)), ' '.join(map(str, t))))
+                f.write("%s\t%s\t%s\t%s\t%s\t%s\t%s\n" % (correct, ''.join(map(str, str_px)), ''.join(map(str,str_p)), ''.join(map(str, str_t)), ' '.join(map(str, px)), ' '.join(map(str, p)), ' '.join(map(str, t))))
 
             target_filename = "orig_x.npy"
             np.save(target_filename, orig_x, allow_pickle=False)
