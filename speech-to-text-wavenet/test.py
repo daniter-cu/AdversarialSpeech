@@ -37,6 +37,8 @@ x = data.mfcc
 # target sentence label
 y = data.label
 
+filenames_t = data.filenames
+
 # sequence length except zero-padding
 seq_len = tf.not_equal(x.sg_sum(axis=2), 0.).sg_int().sg_sum(axis=1)
 
@@ -83,7 +85,10 @@ with tf.Session(config=tf.ConfigProto(allow_soft_placement=True)) as sess:
 
 
     f = open("preds_vs_labels.tsv", "wb")
-    f.write("same_diff\tpred_on_orig\tpred_on_adv\ttarget\tnum_pred_on_orig\tnum_pred_on_adv\tnum_target\n")
+    f.write("filename\tsame_diff\tpred_on_orig\tpred_on_adv\ttarget\tnum_pred_on_orig\tnum_pred_on_adv\tnum_target\n")
+    orig_x_f = open("orig_x.npy", "ab")
+    adv_x_f = open("adv_x.npy", "ab")
+
     with tf.sg_queue_context():
 
         # create progress bar
@@ -98,11 +103,11 @@ with tf.Session(config=tf.ConfigProto(allow_soft_placement=True)) as sess:
             batch_loss = None
             #batch_loss = sess.run(loss)
             adv, diff, orig_x = sess.run([adv_x, diff_x, x])
-            preds, target, predsx = sess.run([preds_adv, y, preds_x])
+            preds, target, predsx, filenames = sess.run([preds_adv, y, preds_x, filenames_t])
             preds = tf.sparse_tensor_to_dense(preds, default_value=-1).eval()
             predsx = tf.sparse_tensor_to_dense(predsx, default_value=-1).eval()
 
-            for p, px, t in zip(preds, predsx, target):
+            for p, px, t, filename in zip(preds, predsx, target, filenames):
                 p = [(int(ch) + 1) for ch in p if ch != -1]
                 str_p = index2str(p)
                 
@@ -114,13 +119,12 @@ with tf.Session(config=tf.ConfigProto(allow_soft_placement=True)) as sess:
                 
                 if px != p: correct = "DIFF"
                 else: correct = "SAME"
-                f.write("%s\t%s\t%s\t%s\t%s\t%s\t%s\n" % (correct, ''.join(map(str, str_px)), ''.join(map(str,str_p)), ''.join(map(str, str_t)), ' '.join(map(str, px)), ' '.join(map(str, p)), ' '.join(map(str, t))))
 
-            target_filename = "orig_x.npy"
-            np.save(target_filename, orig_x, allow_pickle=False)
+                f.write("%s\n" % '\t'.join([filename, correct, ''.join(map(str, str_px)), ''.join(map(str,str_p)), ''.join(map(str, str_t)), ' '.join(map(str, px)), ' '.join(map(str, p)), ' '.join(map(str, t))]))
 
-            target_filename = "adv_x.npy"
-            np.save(target_filename, adv, allow_pickle=False)
+            np.save(orig_x_f, orig_x, allow_pickle=False)
+
+            np.save(adv_x_f, adv, allow_pickle=False)
 
             # loss history update
             if batch_loss is not None and \

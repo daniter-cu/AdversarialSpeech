@@ -6,6 +6,23 @@
   * `model.py` is where the network graph is defined
   * `data.py` handles loading the preprocessed data
   * `preprocess.py` handles preprocessing VCTK 
+* Relevant MFCC's to look at:
+  * `orig_x.npy` is a binary representation of the MFCCs of the original examples. Here's how to load them:
+
+```python
+>>> orig = np.load("orig_x.npy")
+>>> orig.shape
+(16, 173, 20)
+>>>
+>>> orig = []
+>>> for i in range(8): # instead of 8, maybe it should be "load until I can't anymore"
+...   orig.append(np.load("orig_x.npy"))
+...
+>>> len(orig)
+8
+```
+  * `adv_x.npy` is a binary representation of the MFCCs of the adversarial examples. 
+  * The 16 in the dimensions is the batch size.
 
 
 # Speech-to-Text-WaveNet : End-to-end sentence level English speech recognition using DeepMind's WaveNet

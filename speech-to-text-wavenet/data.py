@@ -76,7 +76,7 @@ def print_index(indices):
 def _load_mfcc(src_list):
 
     # label, wave_file
-    label, mfcc_file = src_list
+    label, mfcc_file, filename = src_list
 
     # decode string to integer
     label = np.fromstring(label, np.int)
@@ -87,7 +87,7 @@ def _load_mfcc(src_list):
     # speed perturbation augmenting
     mfcc = _augment_speech(mfcc)
 
-    return label, mfcc
+    return label, mfcc, filename
 
 
 def _augment_speech(mfcc):
@@ -106,65 +106,6 @@ def _augment_speech(mfcc):
 
     return mfcc
 
-# Speech Corpus
-class SpeechCorpus2(object):
-
-    def __init__(self, batch_size=16, set_name='train'):
-
-        # load meta file
-        label, mfcc_file = [], []
-        dataset_path = "asset/data/hw3_data.dat"
-        dataset = pickle.load(open(dataset_path, 'rb'))
-        mfcc, labels, sqlen = dataset
-        label_q = np.array(labels)
-        mfcc_q = []
-        for ar in mfcc:
-          mfcc_q.append(np.array(ar))
-        mfcc_q = np.array(mfcc_q)
-        print label_q.shape
-        print mfcc_q.shape
-
-        '''
-        with open(_data_path + 'preprocess/meta/%s.csv' % set_name) as csv_file:
-            reader = csv.reader(csv_file, delimiter=',')
-            for row in reader:
-                # mfcc file
-                mfcc_file.append(_data_path + 'preprocess/mfcc/' + row[0] + '.npy')
-                # label info ( convert to string object for variable-length support )
-                label.append(np.asarray(row[1:], dtype=np.int).tostring())
-
-        '''
-        '''
-        # to constant tensor
-        label_t = tf.convert_to_tensor(label)
-        mfcc_t = tf.convert_to_tensor(mfcc)
-
-        # create queue from constant tensor
-        label_q, mfcc_q \
-            = tf.train.slice_input_producer([label_t, mfcc_t], shuffle=True)
-
-        # create label, mfcc queue
-        label_q, mfcc_q = _load_mfcc(source=[label_q, mfcc_file_q],
-                                     dtypes=[tf.sg_intx, tf.sg_floatx],
-                                     capacity=256, num_threads=64)
-
-        '''
-        # create batch queue with dynamic pad
-        batch_queue = tf.train.batch([label_q, mfcc_q], batch_size,
-                                     shapes=[(None,), (20, None)],
-                                     num_threads=64, capacity=batch_size*32,
-                                     dynamic_pad=True)
-
-        # split data
-        self.label, self.mfcc = batch_queue
-        # batch * time * dim
-        self.mfcc = self.mfcc.sg_transpose(perm=[0, 2, 1])
-        # calc total batch count
-        self.num_batch = len(label) // batch_size
-
-        # print info
-        tf.sg_info('%s set loaded.(total data=%d, total batch=%d)'
-                   % (set_name.upper(), len(label), self.num_batch))
 
 # Speech Corpus
 class SpeechCorpus(object):
@@ -172,11 +113,14 @@ class SpeechCorpus(object):
     def __init__(self, batch_size=16, set_name='train'):
 
         # load meta file
-        label, mfcc_file = [], []
+        label, mfcc_file, filenames = [], [], []
+     
         with open(_data_path + 'preprocess/meta/%s.csv' % set_name) as csv_file:
             reader = csv.reader(csv_file, delimiter=',')
             for row in reader:
                 # mfcc file
+                filenames.append(row[0])
+
                 mfcc_file.append(_data_path + 'preprocess/mfcc/' + row[0] + '.npy')
                 # label info ( convert to string object for variable-length support )
                 label.append(np.asarray(row[1:], dtype=np.int).tostring())
@@ -184,31 +128,31 @@ class SpeechCorpus(object):
         # to constant tensor
         label_t = tf.convert_to_tensor(label)
         mfcc_file_t = tf.convert_to_tensor(mfcc_file)
+        filenames_t = tf.convert_to_tensor(filenames)
 
         # create queue from constant tensor
-        label_q, mfcc_file_q \
-            = tf.train.slice_input_producer([label_t, mfcc_file_t], shuffle=True)
+        label_q, mfcc_file_q, filenames_q \
+            = tf.train.slice_input_producer([label_t, mfcc_file_t, filenames_t], shuffle=False)
+            #= tf.train.slice_input_producer([label_t, mfcc_file_t, filenames_t], shuffle=True)
 
         # create label, mfcc queue
-        label_q, mfcc_q = _load_mfcc(source=[label_q, mfcc_file_q],
-                                     dtypes=[tf.sg_intx, tf.sg_floatx],
+        label_q, mfcc_q, filenames_q = _load_mfcc(source=[label_q, mfcc_file_q, filenames_q],
+                                     dtypes=[tf.sg_intx, tf.sg_floatx, tf.string],
                                      capacity=256, num_threads=64)
 
         # create batch queue with dynamic pad
-        batch_queue = tf.train.batch([label_q, mfcc_q], batch_size,
-                                     shapes=[(None,), (20, None)],
+        batch_queue = tf.train.batch([label_q, mfcc_q, filenames_q], batch_size,
+                                     shapes=[(None,), (20, None), ()],
                                      num_threads=64, capacity=batch_size*32,
                                      dynamic_pad=True)
 
         # split data
-        self.label, self.mfcc = batch_queue
+        self.label, self.mfcc, self.filenames = batch_queue
         # batch * time * dim
         self.mfcc = self.mfcc.sg_transpose(perm=[0, 2, 1])
         # calc total batch count
         self.num_batch = len(label) // batch_size
 
-        print "label shape", self.label.shape
-        print "mfcc shape", self.mfcc.shape
         # print info
         tf.sg_info('%s set loaded.(total data=%d, total batch=%d)'
                    % (set_name.upper(), len(label), self.num_batch))
