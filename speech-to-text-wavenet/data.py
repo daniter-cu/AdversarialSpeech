@@ -85,7 +85,7 @@ def _load_mfcc(src_list):
     mfcc = np.load(mfcc_file, allow_pickle=False)
 
     # speed perturbation augmenting
-    mfcc = _augment_speech(mfcc)
+    #mfcc = _augment_speech(mfcc)
 
     return label, mfcc, filename
 
