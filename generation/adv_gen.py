@@ -35,7 +35,7 @@ class Config:
 
     num_epochs = 50
     l2_lambda = 0.0000001
-    lr = 1e-2#1e-4
+    lr = 5e-4#1e-2#1e-4
 
 class CTCModel():
     """
@@ -330,23 +330,29 @@ if __name__ == "__main__":
             tmp = train_labels_minibatches[batch_ii]
             new_label = (tmp[0], np.array([1], dtype=np.int32), tmp[2])
 
-            for i in xrange(200):
+            np.save("before.npy", train_feature_minibatches[batch_ii])
+
+            for i in xrange(1000):
                 new_loss, noise = model.train_adversarial(session, train_feature_minibatches[batch_ii], new_label, train_seqlens_minibatches[batch_ii])
                 pred, target = model.get_pred(train_feature_minibatches[batch_ii], train_labels_minibatches[batch_ii], train_seqlens_minibatches[batch_ii])
-                if i % 10 == 0:
+                if i % 100 == 0:
                     print("\n")
                     print("Iteration: ",i)
                     print("Loss: ", new_loss)
                     print("Pred: ", pred)
                     print("Target: ", target)
-                    if len(pred) == 1 and pred[0] == 1:
-                        print("Successfully fooled network!")
-                        print(np.max(noise))
-                        print(np.min(noise))
-                        print(np.mean(noise))
-                        print(np.max(train_feature_minibatches[batch_ii]))
-                        print(np.min(train_feature_minibatches[batch_ii]))
-                        print(np.mean(train_feature_minibatches[batch_ii]))
-                        break
+                if len(pred) == 1 and pred[0] == 1:
+                    print("Loss: ", new_loss)
+                    print("Successfully fooled network!")
+                    break
+            print(np.max(noise))
+            print(np.min(noise))
+            print(np.mean(noise))
+            print(np.max(train_feature_minibatches[batch_ii]))
+            print(np.min(train_feature_minibatches[batch_ii]))
+            print(np.mean(train_feature_minibatches[batch_ii]))
+
+            np.save("after.npy", train_feature_minibatches[batch_ii] + noise)
+
             
 
