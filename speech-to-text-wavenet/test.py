@@ -5,6 +5,9 @@ import numpy as np
 from tqdm import tqdm
 from attacks import FastGradientMethod
 
+##################################################
+## Edited by Jade Huang
+##################################################
 
 __author__ = 'namju.kim@kakaobrain.com'
 
@@ -84,10 +87,10 @@ with tf.Session(config=tf.ConfigProto(allow_soft_placement=True)) as sess:
                (tf.sg_arg().set.upper(), sess.run(tf.sg_global_step())))
 
 
-    f = open("preds_vs_labels.tsv", "wb")
+    f = open("preds_vs_labels1.tsv", "wb")
     f.write("filename\tsame_diff\tpred_on_orig\tpred_on_adv\ttarget\tnum_pred_on_orig\tnum_pred_on_adv\tnum_target\n")
-    orig_x_f = open("orig_x.npy", "ab")
-    adv_x_f = open("adv_x.npy", "ab")
+    orig_x_f = open("orig_x1.npy", "ab")
+    adv_x_f = open("adv_x1.npy", "ab")
 
     with tf.sg_queue_context():
 
