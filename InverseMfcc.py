@@ -83,7 +83,8 @@ class InverseMfcc(object):
                                                          self._invlogamplitude(np.dot(dctm.T, mfccs)))
 
         # Impose reconstructed magnitude on white noise STFT
-        excitation = np.random.randn(self.orig.shape[0])
+        #excitation = np.random.randn(self.orig.shape[0])
+        excitation = np.random.randn(self.hop_length*(mfccs.shape[1]-1))
         E = librosa.stft(excitation, hop_length=self.hop_length)
         self.recon = librosa.istft(E / np.abs(E) * np.sqrt(recon_stft))
 
