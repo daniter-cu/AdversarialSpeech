@@ -8,6 +8,7 @@ import data
 import os
 import re
 import subprocess
+import sys
 
 __author__ = 'namju.kim@kakaobrain.com'
 
@@ -66,6 +67,58 @@ def process_tidigits(csv_file):
         # save mfcc
         np.save(target_filename, mfcc, allow_pickle=False)
 
+#
+# process one word examples we created 
+#
+
+def process_oneword(csv_file):
+
+    # create csv writer
+    writer = csv.writer(csv_file, delimiter=',')
+
+    # read label-info
+    #df = pd.read_table(_data_path + 'VCTK-Corpus/speaker-info.txt', usecols=['ID'],
+    #                   index_col=False, delim_whitespace=True)
+
+    oneword_dir = "../audios"
+    file_ids = glob.glob(os.path.join(oneword_dir, "*.wav"))
+
+    # read file IDs
+    #file_ids = []
+    #for d in [_data_path + 'VCTK-Corpus/txt/p%d/' % uid for uid in df.ID.values]:
+    #    file_ids.extend([f[-12:-4] for f in sorted(glob.glob(d + '*.txt'))])
+
+    for i, wave_file in enumerate(file_ids):
+
+        # wave file name
+        #wave_file = _data_path + 'VCTK-Corpus/wav48/%s/' % f[:4] + f + '.wav'
+        fn = wave_file.split('/')[-1]
+
+        target_filename = 'asset/data/preprocess/mfcc-one/' + fn + '.npy'
+        if os.path.exists( target_filename ):
+            continue
+        # print info
+        print("One word corpus preprocessing (%d / %d) - '%s']" % (i, len(file_ids), wave_file))
+
+        # load wave file
+        wave, sr = librosa.load(wave_file, mono=True, sr=None)
+
+        # re-sample ( 48K -> 16K )
+        wave = wave[::3]
+
+        # get mfcc feature
+        mfcc = librosa.feature.mfcc(wave, sr=16000)
+
+        # get label index
+        label_fn = fn.split(".")[0]
+        label = data.str2index(open('../audios_labels/%s' % (label_fn + '.txt')).read())
+
+        # save result ( exclude small mfcc data to prevent ctc loss )
+        if len(label) < mfcc.shape[1]:
+            # save meta info
+            writer.writerow([fn] + label)
+            # save mfcc
+            np.save(target_filename, mfcc, allow_pickle=False)
 #
 # process VCTK corpus
 #
@@ -276,8 +329,14 @@ csv_f.close()
 
 '''
 # VCTK corpus
+'''
 csv_f = open('asset/data/preprocess/meta/train.csv', 'w')
 process_vctk(csv_f)
+csv_f.close()
+'''
+
+csv_f = open('asset/data/preprocess/meta/train-one.csv', 'w')
+process_oneword(csv_f)
 csv_f.close()
 
 '''

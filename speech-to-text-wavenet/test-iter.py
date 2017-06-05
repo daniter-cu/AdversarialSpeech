@@ -4,6 +4,7 @@ from model import *
 import numpy as np
 from tqdm import tqdm
 from attacks import FastGradientMethod
+import pickle
 
 ##################################################
 ## Edited by Jade Huang
@@ -28,6 +29,7 @@ tf.sg_arg_def(frac=(1.0, "test fraction ratio to whole data set. The default is 
 batch_size = 16
 
 num_iters = 10
+print "num_iters: %s" % num_iters
 
 #
 # inputs
@@ -66,12 +68,25 @@ with tf.Session(config=tf.ConfigProto(allow_soft_placement=True)) as sess:
     # generate adversarial examples
     fgsm = FastGradientMethod(get_logit, sess=sess)
     fgsm_params = {'eps': 0.3}
-    adv_x = fgsm.generate(x, **fgsm_params)
-    diff_x = adv_x - x
 
     # run adversarial examples through network
+    adv_x = fgsm.generate(x, **fgsm_params)
     logit_adv = get_logit_again(adv_x)
     preds_adv = get_decoded_seq(logit_adv, seq_len, y)
+
+    def get_adv(x, num_iters):
+      fgsm = FastGradientMethod(get_logit_again, sess=sess)
+      advx = fgsm.generate(x, **fgsm_params)
+      
+      for _ in xrange(num_iters - 1):
+        advx = fgsm.generate(advx, **fgsm_params)
+      return advx
+
+    def get_logit_adv(x, num_iters):
+      return get_logit_again(get_adv(x, num_iters))
+ 
+    def get_preds_adv(x, num_iters):
+      return get_decoded_seq(get_logit_adv(x, num_iters), seq_len, y)
 
     # output on normal inputs
     logit_x = get_logit_again(x)
@@ -89,10 +104,15 @@ with tf.Session(config=tf.ConfigProto(allow_soft_placement=True)) as sess:
                (tf.sg_arg().set.upper(), sess.run(tf.sg_global_step())))
 
 
-    f = open("preds_vs_labels_iters" + str(num_iters) + ".tsv", "wb")
+    f = open("vctk/preds_vs_labels_iters" + str(num_iters) + ".tsv", "wb")
+    #f = open("one_word/preds_vs_labels_iters" + str(num_iters) + ".tsv", "wb")
     f.write("filename\tsame_diff\tpred_on_orig\tpred_on_adv\ttarget\tnum_pred_on_orig\tnum_pred_on_adv\tnum_target\n")
-    orig_x_f = open("orig_x_iters" + str(num_iters) + ".npy", "ab")
-    adv_x_f = open("adv_x_iters" + str(num_iters) + ".npy", "ab")
+    #orig_x_f = open("one_word/orig_x_iters" + str(num_iters) + ".npy", "wb")
+    orig_x_f = open("vctk/orig_x_iters" + str(num_iters) + ".npy", "wb")
+    #adv_x_f = open("one_word/adv_x_iters" + str(num_iters) + ".npy", "wb")
+    adv_x_f = open("vctk/adv_x_iters" + str(num_iters) + ".npy", "wb")
+    orig_xs = []
+    adv_xs = []
 
     with tf.sg_queue_context():
 
@@ -103,41 +123,33 @@ with tf.Session(config=tf.ConfigProto(allow_soft_placement=True)) as sess:
         # batch loop
         loss_avg = 0.
 
-
         for _ in iterator:
 
           # get original inputs once
-          orig_x, target, predsx, filenames = sess.run([x, y, preds_x, filenames_t])
-          np.save(orig_x_f, orig_x, allow_pickle=False)
+          orig_x, target, predsx, filenames, adv, preds= sess.run([x, y, preds_x, filenames_t, \
+            get_adv(x, num_iters), get_preds_adv(x, num_iters)])
+          orig_xs.append(orig_x)
+          adv_xs.append(adv)
+
           predsx = tf.sparse_tensor_to_dense(predsx, default_value=-1).eval()
+          preds = tf.sparse_tensor_to_dense(preds, default_value=-1).eval()
 
-          for _ in xrange(num_iters):
+          #batch_loss = None
 
-              #batch_loss = None
-              adv, diff, preds = sess.run([adv_x, diff_x, preds_adv])
-              np.save(adv_x_f, adv, allow_pickle=False)
+          for p, px, t, filename in zip(preds, predsx, target, filenames):
+              p = [(int(ch) + 1) for ch in p if ch != -1]
+              str_p = index2str(p)
+              
+              t = [ch for ch in t if ch != 0]
+              str_t = index2str(t)
 
-              # redefine adv_x for next loop
-              adv = tf.convert_to_tensor(adv)
-              fgsm = FastGradientMethod(get_logit_again, sess=sess)
-              adv_x = fgsm.generate(adv, **fgsm_params)
+              px = [(int(ch) + 1) for ch in px if ch != -1] 
+              str_px = index2str(px)
+              
+              if px != p: correct = "DIFF"
+              else: correct = "SAME"
 
-              preds = tf.sparse_tensor_to_dense(preds, default_value=-1).eval()
-
-              for p, px, t, filename in zip(preds, predsx, target, filenames):
-                  p = [(int(ch) + 1) for ch in p if ch != -1]
-                  str_p = index2str(p)
-                  
-                  t = [ch for ch in t if ch != 0]
-                  str_t = index2str(t)
-
-                  px = [(int(ch) + 1) for ch in px if ch != -1] 
-                  str_px = index2str(px)
-                  
-                  if px != p: correct = "DIFF"
-                  else: correct = "SAME"
-
-                  f.write("%s\n" % '\t'.join([filename, correct, ''.join(map(str, str_px)), ''.join(map(str,str_p)), ''.join(map(str, str_t)), ' '.join(map(str, px)), ' '.join(map(str, p)), ' '.join(map(str, t))]))
+              f.write("%s\n" % '\t'.join([filename, correct, ''.join(map(str, str_px)), ''.join(map(str,str_p)), ''.join(map(str, str_t)), ' '.join(map(str, px)), ' '.join(map(str, p)), ' '.join(map(str, t))]))
 
               # loss history update
               #if batch_loss is not None and \
@@ -149,3 +161,9 @@ with tf.Session(config=tf.ConfigProto(allow_soft_placement=True)) as sess:
 
         # logging
         tf.sg_info('Testing finished on %s.(CTC loss=%f)' % (tf.sg_arg().set.upper(), loss_avg))
+
+        # save arrays to file
+        pickle.dump(orig_xs, orig_x_f)
+        pickle.dump(adv_xs, adv_x_f)
+        #np.save(orig_x_f, orig_xs, allow_pickle=False)
+        #np.save(adv_x_f, adv_xs, allow_pickle=False)

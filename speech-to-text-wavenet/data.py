@@ -122,6 +122,7 @@ class SpeechCorpus(object):
                 filenames.append(row[0])
 
                 mfcc_file.append(_data_path + 'preprocess/mfcc/' + row[0] + '.npy')
+                #mfcc_file.append(_data_path + 'preprocess/mfcc-one/' + row[0] + '.npy')
                 # label info ( convert to string object for variable-length support )
                 label.append(np.asarray(row[1:], dtype=np.int).tostring())
 
