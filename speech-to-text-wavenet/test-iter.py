@@ -28,7 +28,7 @@ tf.sg_arg_def(frac=(1.0, "test fraction ratio to whole data set. The default is 
 # batch size
 batch_size = 16
 
-num_iters = 10
+num_iters = 1
 print "num_iters: %s" % num_iters
 
 #
@@ -104,13 +104,13 @@ with tf.Session(config=tf.ConfigProto(allow_soft_placement=True)) as sess:
                (tf.sg_arg().set.upper(), sess.run(tf.sg_global_step())))
 
 
-    f = open("vctk/preds_vs_labels_iters" + str(num_iters) + ".tsv", "wb")
-    #f = open("one_word/preds_vs_labels_iters" + str(num_iters) + ".tsv", "wb")
+    #f = open("vctk/preds_vs_labels_iters" + str(num_iters) + ".tsv", "wb")
+    f = open("one_word/preds_vs_labels_iters" + str(num_iters) + ".tsv", "wb")
     f.write("filename\tsame_diff\tpred_on_orig\tpred_on_adv\ttarget\tnum_pred_on_orig\tnum_pred_on_adv\tnum_target\n")
-    #orig_x_f = open("one_word/orig_x_iters" + str(num_iters) + ".npy", "wb")
-    orig_x_f = open("vctk/orig_x_iters" + str(num_iters) + ".npy", "wb")
-    #adv_x_f = open("one_word/adv_x_iters" + str(num_iters) + ".npy", "wb")
-    adv_x_f = open("vctk/adv_x_iters" + str(num_iters) + ".npy", "wb")
+    orig_x_f = open("one_word/orig_x_iters" + str(num_iters) + ".npy", "wb")
+    #orig_x_f = open("vctk/orig_x_iters" + str(num_iters) + ".npy", "wb")
+    adv_x_f = open("one_word/adv_x_iters" + str(num_iters) + ".npy", "wb")
+    #adv_x_f = open("vctk/adv_x_iters" + str(num_iters) + ".npy", "wb")
     orig_xs = []
     adv_xs = []
 
