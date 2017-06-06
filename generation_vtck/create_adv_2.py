@@ -37,9 +37,9 @@ voca_size = data.voca_size
 # mfcc feature of audio
 x = tf.placeholder(dtype=tf.sg_floatx, shape=(batch_size, None, 20))
 
-#noise = tf.get_variable("noise", shape=(batch_size, mfccs[index].shape[1], 20), initializer=tf.zeros_initializer())
+noise = tf.get_variable("noise", shape=(batch_size, mfccs[index].shape[1], 20), initializer=tf.zeros_initializer())
 
-perturbed_input = x #+ noise
+perturbed_input = x + noise
 
 # sequence length except zero-padding
 seq_len = tf.not_equal(x.sg_sum(axis=2), 0.).sg_int().sg_sum(axis=1)
@@ -61,8 +61,6 @@ with tf.Session() as sess:
 
     # init variables
     tf.sg_init(sess)
-
-    
 
     all_vars = tf.get_collection(tf.GraphKeys.GLOBAL_VARIABLES) + \
           tf.get_collection(tf.GraphKeys.SAVEABLE_OBJECTS)
