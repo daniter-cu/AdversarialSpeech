@@ -109,6 +109,7 @@ class SpeechCorpus(object):
 
         # load meta file
         label, mfcc_file = [], []
+        self.daniter_label = []
         count = 0
         with open(_data_path + 'preprocess/meta/%s.csv' % set_name) as csv_file:
             reader = csv.reader(csv_file, delimiter=',')
@@ -124,6 +125,7 @@ class SpeechCorpus(object):
                 mfcc_file.append(_data_path + 'preprocess/mfcc/' + row[0] + '.npy')
                 # label info ( convert to string object for variable-length support )
                 label.append(np.asarray(row[1:], dtype=np.int).tostring())
+                self.daniter_label.append(np.asarray(row[1:], dtype=np.int))
 
                 # DANITER
                 print "\n\n\n##### Label ######", count

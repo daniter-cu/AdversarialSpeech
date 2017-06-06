@@ -55,7 +55,7 @@ decoded, _ = tf.nn.ctc_beam_search_decoder(logit.sg_transpose(perm=[1, 0, 2]), s
 # to dense tensor
 pred = tf.sparse_to_dense(decoded[0].indices, decoded[0].dense_shape, decoded[0].values) + 1
 
-targ = corpus.label
+targ = tf.placeholder(dtype=tf.int32, shape=corpus.label.shape)#corpus.label
 loss = logit.sg_ctc(target=targ, seq_len=seq_len)
 
 opt = tf.train.GradientDescentOptimizer(learning_rate=lr)
@@ -77,8 +77,11 @@ with tf.Session() as sess:
     #saver = tf.train.Saver()
     saver.restore(sess, tf.train.latest_checkpoint('asset/train'))
     # run session
-    with tf.sg_queue_context():
-      new_loss, _, noise_out = sess.run([loss, optimizer, noise], feed_dict={x: mfccs[index]})
+    #with tf.sg_queue_context():
+    for i in xrange(100):
+      if i % 10 == 0:
+        print "iteration ", i
+      new_loss, _, noise_out = sess.run([loss, optimizer, noise], feed_dict={x: mfccs[index], targ:corpus.daniter_label[index].reshape((1, -1))})
 
     label = sess.run(pred, feed_dict={x: mfccs[index]})
 
