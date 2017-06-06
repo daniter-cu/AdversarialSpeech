@@ -34,10 +34,7 @@ logit = get_logit(x, voca_size=voca_size)
 loss = logit.sg_ctc(target=y, seq_len=seq_len)
 
 decoded_sequence, _ = tf.nn.ctc_beam_search_decoder(logit.sg_transpose(perm=[1, 0, 2]), seq_len, merge_repeated=False)
-#decoded_sequence = decoded_sequence[0] 
 
-
-#x = tf.placeholder(dtype=tf.sg_floatx, shape=(batch_size, None, 20))
 y = tf.sparse_to_dense(decoded_sequence[0].indices, decoded_sequence[0].dense_shape, decoded_sequence[0].values) + 1
 
 #
