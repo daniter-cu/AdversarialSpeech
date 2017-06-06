@@ -28,8 +28,6 @@ lr = 0.01
 # inputs
 #
 corpus = SpeechCorpus(batch_size=batch_size * tf.sg_gpus())
-
-exit()
 mfccs = []
 for mfcc_file in corpus.mfcc_file:
   mfcc = np.load(mfcc_file, allow_pickle=False)
