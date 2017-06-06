@@ -22,6 +22,8 @@ batch_size = 1     # batch size
 
 index = 0
 
+lr = 1e-2
+
 #
 # inputs
 #
@@ -51,10 +53,13 @@ logit = get_logit(perturbed_input, voca_size=voca_size)
 decoded, _ = tf.nn.ctc_beam_search_decoder(logit.sg_transpose(perm=[1, 0, 2]), seq_len, merge_repeated=False)
 
 # to dense tensor
-y = tf.sparse_to_dense(decoded[0].indices, decoded[0].dense_shape, decoded[0].values) + 1
+pred = tf.sparse_to_dense(decoded[0].indices, decoded[0].dense_shape, decoded[0].values) + 1
 
+targ = corpus.label
+loss = logit.sg_ctc(target=targ, seq_len=seq_len)
 
-
+opt = tf.train.GradientDescentOptimizer(learning_rate=lr)
+optimizer = opt.minimize(loss, var_list=(noise,))
 
 # run network
 with tf.Session() as sess:
@@ -72,7 +77,10 @@ with tf.Session() as sess:
     #saver = tf.train.Saver()
     saver.restore(sess, tf.train.latest_checkpoint('asset/train'))
     # run session
-    label = sess.run(y, feed_dict={x: mfccs[index]})
+    with tf.sg_queue_context():
+      new_loss, _, noise_out = sess.run([loss, optimizer, noise], feed_dict={x: mfccs[index]})
+
+    label = sess.run(pred, feed_dict={x: mfccs[index]})
 
     # print label
     print_index(label)
