@@ -4,7 +4,7 @@ import numpy as np
 import librosa
 from model import *
 import data
-from data import SpeechCorpus, voca_size, index2byte, print_index
+from data import SpeechCorpus, voca_size, index2byte, print_index, str2index, index2str
 
 
 
@@ -22,7 +22,7 @@ batch_size = 1     # batch size
 
 index = 0
 
-lr = 1e-2
+lr = 0.01
 
 #
 # inputs
@@ -61,6 +61,8 @@ loss = logit.sg_ctc(target=targ, seq_len=seq_len)
 opt = tf.train.GradientDescentOptimizer(learning_rate=lr)
 optimizer = opt.minimize(loss, var_list=(noise,))
 
+new_target = np.array(str2index("dan is the best"))
+
 # run network
 with tf.Session() as sess:
 
@@ -78,12 +80,17 @@ with tf.Session() as sess:
     saver.restore(sess, tf.train.latest_checkpoint('asset/train'))
     # run session
     #with tf.sg_queue_context():
-    for i in xrange(100):
+    for i in xrange(1000):
       if i % 10 == 0:
-        print "iteration ", i
-      new_loss, _, noise_out = sess.run([loss, optimizer, noise], feed_dict={x: mfccs[index], targ:corpus.daniter_label[index].reshape((1, -1))})
+        print "iteration ", i #targ:corpus.daniter_label[index]
+      new_loss, _, noise_out = sess.run([loss, optimizer, noise], feed_dict={x: mfccs[index], targ:new_target.reshape((1, -1))})
+
+      if i % 100 == 0:
+        label = sess.run(pred, feed_dict={x: mfccs[index]})
+        print_index(label)
 
     label = sess.run(pred, feed_dict={x: mfccs[index]})
 
     # print label
     print_index(label)
+    print noise_out
