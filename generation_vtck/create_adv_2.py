@@ -28,6 +28,8 @@ lr = 0.01
 # inputs
 #
 corpus = SpeechCorpus(batch_size=batch_size * tf.sg_gpus())
+
+exit()
 mfccs = []
 for mfcc_file in corpus.mfcc_file:
   mfcc = np.load(mfcc_file, allow_pickle=False)
@@ -76,14 +78,14 @@ with tf.Session() as sess:
 
     # restore parameters
     saver = tf.train.Saver(vars_to_train)
-    #saver = tf.train.Saver()
     saver.restore(sess, tf.train.latest_checkpoint('asset/train'))
     # run session
-    #with tf.sg_queue_context():
     for i in xrange(1000):
+      
+      new_loss, _, noise_out = sess.run([loss, optimizer, noise], feed_dict={x: mfccs[index], targ:new_target.reshape((1, -1))})
       if i % 10 == 0:
         print "iteration ", i #targ:corpus.daniter_label[index]
-      new_loss, _, noise_out = sess.run([loss, optimizer, noise], feed_dict={x: mfccs[index], targ:new_target.reshape((1, -1))})
+        print new_loss
 
       if i % 100 == 0:
         label = sess.run(pred, feed_dict={x: mfccs[index]})
@@ -94,3 +96,5 @@ with tf.Session() as sess:
     # print label
     print_index(label)
     print noise_out
+
+    #TODO: find easier examples
