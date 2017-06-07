@@ -24,18 +24,18 @@ index = 0
 
 lr = 0.5
 
-fool = "cat"
+fool = "satan"
 
 #
 # inputs
 #
-corpus = SpeechCorpus(batch_size=batch_size * tf.sg_gpus())
+#corpus = SpeechCorpus(batch_size=batch_size * tf.sg_gpus())
 mfccs = []
 # for mfcc_file in corpus.mfcc_file:
 #   mfcc = np.load(mfcc_file, allow_pickle=False)
 #   mfccs.append(mfcc.reshape((1, mfcc.shape[0], mfcc.shape[1])).transpose([0,2,1]))
 
-for mfcc_file in ["more_data/mfcc-one/frog.wav.npy"]:
+for mfcc_file in ["more_data/mfcc-one/rainbow.wav.npy"]:
   mfcc = np.load(mfcc_file, allow_pickle=False)
   mfccs.append(mfcc.reshape((1, mfcc.shape[0], mfcc.shape[1])).transpose([0,2,1]))
 
@@ -61,7 +61,7 @@ decoded, _ = tf.nn.ctc_beam_search_decoder(logit.sg_transpose(perm=[1, 0, 2]), s
 # to dense tensor
 pred = tf.sparse_to_dense(decoded[0].indices, decoded[0].dense_shape, decoded[0].values) + 1
 
-targ = tf.placeholder(dtype=tf.int32, shape=corpus.label.shape)#corpus.label
+targ = tf.placeholder(dtype=tf.int32, shape=(1,None))#corpus.label.shape)#corpus.label
 loss = logit.sg_ctc(target=targ, seq_len=seq_len)
 
 opt = tf.train.GradientDescentOptimizer(learning_rate=lr)
