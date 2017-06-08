@@ -22,14 +22,20 @@ batch_size = 1     # batch size
 
 index = 0
 
-lr = 0.01
+lr = 0.5
+
+fool = "satan"
 
 #
 # inputs
 #
-corpus = SpeechCorpus(batch_size=batch_size * tf.sg_gpus())
+#corpus = SpeechCorpus(batch_size=batch_size * tf.sg_gpus())
 mfccs = []
-for mfcc_file in corpus.mfcc_file:
+# for mfcc_file in corpus.mfcc_file:
+#   mfcc = np.load(mfcc_file, allow_pickle=False)
+#   mfccs.append(mfcc.reshape((1, mfcc.shape[0], mfcc.shape[1])).transpose([0,2,1]))
+
+for mfcc_file in ["more_data/mfcc-one/rainbow.wav.npy"]:
   mfcc = np.load(mfcc_file, allow_pickle=False)
   mfccs.append(mfcc.reshape((1, mfcc.shape[0], mfcc.shape[1])).transpose([0,2,1]))
 
@@ -55,13 +61,13 @@ decoded, _ = tf.nn.ctc_beam_search_decoder(logit.sg_transpose(perm=[1, 0, 2]), s
 # to dense tensor
 pred = tf.sparse_to_dense(decoded[0].indices, decoded[0].dense_shape, decoded[0].values) + 1
 
-targ = tf.placeholder(dtype=tf.int32, shape=corpus.label.shape)#corpus.label
+targ = tf.placeholder(dtype=tf.int32, shape=(1,None))#corpus.label.shape)#corpus.label
 loss = logit.sg_ctc(target=targ, seq_len=seq_len)
 
 opt = tf.train.GradientDescentOptimizer(learning_rate=lr)
 optimizer = opt.minimize(loss, var_list=(noise,))
 
-new_target = np.array(str2index("dan is the best"))
+new_target = np.array(str2index(fool))
 
 # run network
 with tf.Session() as sess:
@@ -78,7 +84,7 @@ with tf.Session() as sess:
     saver = tf.train.Saver(vars_to_train)
     saver.restore(sess, tf.train.latest_checkpoint('asset/train'))
     # run session
-    for i in xrange(1000):
+    for i in xrange(10000):
       
       new_loss, _, noise_out = sess.run([loss, optimizer, noise], feed_dict={x: mfccs[index], targ:new_target.reshape((1, -1))})
       if i % 10 == 0:
@@ -87,12 +93,15 @@ with tf.Session() as sess:
 
       if i % 100 == 0:
         label = sess.run(pred, feed_dict={x: mfccs[index]})
-        print_index(label)
+        print index2str(label[0])
+        if index2str(label[0]) == fool:
+          break
 
     label = sess.run(pred, feed_dict={x: mfccs[index]})
 
     # print label
     print_index(label)
     print noise_out
+    np.save(fool+".npy", noise_out+mfccs[0])
 
     #TODO: find easier examples
